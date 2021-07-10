@@ -1,4 +1,5 @@
-<div *ngFor="let city of cities;">
-  <p>{{ city }}</p>
-  <app-weather-card [city]="city"></app-weather-card>
+<div class="content">
+  <div *ngFor="let city of cities;">
+    <app-weather-card [city]="city"></app-weather-card>
+  </div>
 </div>
