@@ -14,6 +14,12 @@ Used Open Weather Data to create a single page app that features a list of 5 Eur
 <h4 align="center"><a href="http://openweathermap.org/current" blank>Open Weather Data API</a></h4>
 <h6>Below you can find the urls used to get the data used in the application. If you want to test only as URLs, you can use the postman or insomnia and inform the requested data (city and API key)</h6>
 
+## Call current weather data for one location
+<img src="assets/currentweather.png">
+
+## Call current weather data for one location
+<img src="assets/forecastweather.png">
+
 ## Clone de project
 
 ```sh
