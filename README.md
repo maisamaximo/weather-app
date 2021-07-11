@@ -17,7 +17,7 @@ Used Open Weather Data to create a single page app that features a list of 5 Eur
 ## Call current weather data for one location
 <img src="assets/currentweather.png">
 
-## Call current weather data for one location
+## Call 5 day / 3 hour forecast data
 <img src="assets/forecastweather.png">
 
 ## Clone de project
