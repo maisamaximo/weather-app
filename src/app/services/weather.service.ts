@@ -8,7 +8,6 @@ import { ForecastResponse } from '../models/forecast.model';
   providedIn: 'root',
 })
 export class WeatherService {
-  cities: string[] = ['london', 'madrid', 'amsterdam', 'paris', 'lisbon'];
 
   baseUrl = 'https://api.openweathermap.org/data/2.5/';
   apiKey = '200eb36186e425fee079a6963f502a6c';

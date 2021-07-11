@@ -1,16 +1,30 @@
-<div class="container" *ngIf="weatherData; else emptyList" (click)="showForecast()">
-  <div class="weatherWidgetRow" style="font-size: 32px;margin-top: 5px;">{{convertToCelsius(weatherData.main.temp)}}°
-  </div>
-  <div class="weatherWidgetRow" style="font-size: 12px;">{{convertToCelsius(weatherData.main.temp_min)}}° /
-    {{convertToCelsius(weatherData.main.temp_max)}}°</div>
-  <div class="weatherWidgetRow" style="font-size: 12px;">Feels Like: {{convertToCelsius(weatherData.main.feels_like)}}°
-  </div>
-  <div class="weatherWidgetRow" style="font-size: 25px;margin-top: 10px;">{{weatherData.name}}</div>
-  <div class="weatherWidgetRow" style="font-size: 12px;">Wind strength: {{weatherData.wind.speed}} meter/sec</div>
-  <div *ngIf="forecastData && forecastEnabled">
-    <div class="forecastItem" *ngFor="let item of forecastData.slice(0,5);">
-      <p>{{ item.dt * 1000 | date:'dd/MM/yyyy hh' }}</p>
-      <p>{{ convertToCelsius(item.main.temp) }}°</p>
+<!-- Weather Cart Container -->
+<div *ngIf="weatherData; else emptyList">
+  <div class="container" (click)="showForecast()">
+
+    <div class="area_currentTemperatureTitle">
+      <div class="weatherRow currentTemperatureTitle">{{convertToCelsius(weatherData.main.temp)}}°C
+      </div>
+
+      <div class="area_temperatureSubtitle">
+        <div class="weatherRow temperatureSubtitle">Min:
+          {{convertToCelsius(weatherData.main.temp_min)}}°C |
+          Max: {{convertToCelsius(weatherData.main.temp_max)}}°C</div>
+        <div class="weatherRow temperatureSubtitle">Feels Like: {{convertToCelsius(weatherData.main.feels_like)}}°
+        </div>
+      </div>
+    </div>
+
+
+    <div class="weatherRow cityTitle">{{weatherData.name}}</div>
+    <div class="weatherRow windSubtitle">Wind strength: {{weatherData.wind.speed}} meter/sec</div>
+
+<!-- Forecast Cart Container -->
+    <div class="forecastTable" *ngIf="forecastData && forecastEnabled">
+      <div class="forecastItem" *ngFor="let item of forecastData.slice(0,5);">
+        <p>{{ item.dt * 1000 | date:'hh:mm a' }}</p>
+        <p>{{ convertToCelsius(item.main.temp) }}°C</p>
+      </div>
     </div>
   </div>
 </div>

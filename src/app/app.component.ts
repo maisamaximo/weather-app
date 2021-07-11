@@ -7,9 +7,8 @@ import { WeatherService } from './services/weather.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'weather-app';
 
-  cities: string[] = ['london', 'madrid', 'amsterdam', 'paris', 'lisbon'];
+  cities: string[] = ['london', 'madrid', 'amsterdam', 'paris', 'lisbon', 'prague'];
 
-  constructor(private weatherService: WeatherService) {}
+  constructor() {}
 }

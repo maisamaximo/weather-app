@@ -6,19 +6,16 @@ export interface WeatherResponse {
   clouds: Clouds;
   sys: Sys;
 }
-
 interface Coord {
   lon: number;
   lat: number;
 }
-
 interface Weather {
   id: number;
   main: string;
   description: string;
   icon: string;
 }
-
 interface Main {
   temp: number;
   feels_like: number;
@@ -27,17 +24,14 @@ interface Main {
   pressure: number;
   humidity: number;
 }
-
 interface Wind {
   speed: number;
   deg: number;
   gust: number;
 }
-
 interface Clouds {
   all: number;
 }
-
 interface Sys {
   type: number;
   id: number;

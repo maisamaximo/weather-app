@@ -5,7 +5,6 @@ export interface ForecastResponse {
   list: WeatherData[];
   city: City;
 }
-
 interface Main {
   temp: number;
   feels_like: number;
@@ -17,32 +16,26 @@ interface Main {
   humidity: number;
   temp_kf: number;
 }
-
 interface Weather {
   id: number;
   main: string;
   description: string;
   icon: string;
 }
-
 interface Clouds {
   all: number;
 }
-
 interface Wind {
   speed: number;
   deg: number;
   gust: number;
 }
-
 interface Sys {
   pod: string;
 }
-
 interface Rain {
   '3h': number;
 }
-
 interface WeatherData {
   dt: number;
   main: Main;
@@ -55,12 +48,10 @@ interface WeatherData {
   dt_txt: string;
   rain: Rain;
 }
-
 interface Coord {
   lat: number;
   lon: number;
 }
-
 interface City {
   id: number;
   name: string;

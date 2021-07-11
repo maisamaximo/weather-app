@@ -1,27 +1,45 @@
-# WeatherApp
+<h1 align="center">Welcome to weather-app 👋</h1>
+<p>
+  <a href="https://www.npmjs.com/package/weather-app" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/weather-app.svg">
+  </a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
+<h3 align="center">
+Used Open Weather Data to create a single page app that features a list of 5 European cities and their current weather situation, and clicking on an item shows the forecast for the next hours.
+</h3>
 
-## Development server
+<img src="assets/weather.png">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<h4 align="center"><a href="http://openweathermap.org/current" blank>Open Weather Data API</a></h4>
+<h6>Below you can find the urls used to get the data used in the application. If you want to test only as URLs, you can use the postman or insomnia and inform the requested data (city and API key)</h6>
 
-## Code scaffolding
+## Clone de project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+git clone https://github.com/maisamaximo/weather-app.git
+```
 
-## Build
+## Enter at the folder
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+cd weather-app
+```
 
-## Running unit tests
+## Install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+npm install
+```
 
-## Running end-to-end tests
+## Usage
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```sh
+ng serve
+```
 
-## Further help
+## Run on port
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```sh
+http://localhost:4200/
+```

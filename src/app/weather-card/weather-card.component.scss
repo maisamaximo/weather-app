@@ -1,24 +1,61 @@
-.container{
+.container {
   width: auto;
   min-height: 180px;
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,7,42,1) 75%, rgb(8, 10, 63) 100%);
-  color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+  background: var(--gray);
+  color: var(--white);
   text-align: center;
   border-radius: 1rem;
   position: relative;
+  cursor: pointer;
+  box-shadow: 0px 7px 30px 2px rgba(0, 0, 0, 0.18);
 }
 
-.weatherWidgetRow{
-  display:block;
-  margin:0 auto;
+.weatherRow {
+  display: block;
+  margin: 0 auto;
+  margin-left: 20px;
   width: fit-content;
+}
+
+.forecastTable {
+  padding: 25px 0px;
 }
 
 .forecastItem {
   display: flex;
   padding: 5px 25px;
   justify-content: space-between;
+  background: var(--dark-gray);
+
+}
+
+.area_currentTemperatureTitle {
+  display: flex;
+}
+
+.currentTemperatureTitle {
+  font-size: 30px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+.area_temperatureSubtitle {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.temperatureSubtitle {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.cityTitle {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.windSubtitle {
+  font-size: 10px;
 }

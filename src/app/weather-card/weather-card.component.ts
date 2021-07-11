@@ -25,7 +25,6 @@ export class WeatherCardComponent implements OnInit {
 
   async getWeatherData() {
     await this.weatherService.getWeatherData(this.city).subscribe((weather: WeatherResponse) => {
-      console.log("WEATHER DATA ->", weather);
       this.weatherData = weather;
     });
   }
@@ -42,8 +41,9 @@ export class WeatherCardComponent implements OnInit {
 
   async getForeCastData() {
     await this.weatherService.getForecastData(this.city).subscribe((forecast: ForecastResponse) => {
-      console.log("FORECAST DATA ->", forecast);
       this.forecastData = forecast.list;
     });
   }
+
+  
 }
