@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { WeatherService } from './services/weather.service';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +7,7 @@ import { WeatherService } from './services/weather.service';
 })
 export class AppComponent {
 
+  // List of cities which will be displayed
   cities: string[] = ['london', 'madrid', 'amsterdam', 'paris', 'lisbon', 'prague'];
 
   constructor() {}
